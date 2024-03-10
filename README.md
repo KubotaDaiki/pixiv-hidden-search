@@ -1,1 +1,3 @@
 # pixiv-hidden-search
+
+Pixivのブックマークにある削除済み・非公開イラストの情報を探すことができるchrome拡張機能
