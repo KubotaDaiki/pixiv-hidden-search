@@ -1,7 +1,5 @@
 function addLinksToHiddenElements() {
-  const hiddenElement = document.querySelectorAll(
-    "span.sc-rp5asc-16.iUsZyY.sc-kTCsyW.bpoGz"
-  );
+  const hiddenElement = document.querySelectorAll('[data-gtm-user-id="0"]');
   [...hiddenElement].forEach(function (el) {
     const id = el.getAttribute("data-gtm-value");
     const hoverActionAttribute =
