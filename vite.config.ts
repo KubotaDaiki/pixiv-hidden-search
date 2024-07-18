@@ -14,11 +14,11 @@ const manifest = defineManifest({
   content_scripts: [
     {
       matches: ["https://www.pixiv.net/*"],
-      js: ["src/content-script.js"],
+      js: ["src/content-script.ts"],
     },
   ],
   background: {
-    service_worker: "src/background.js",
+    service_worker: "src/background.ts",
   },
   permissions: ["tabs"],
 });
