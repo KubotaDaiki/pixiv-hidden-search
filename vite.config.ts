@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 
 const manifest = defineManifest({
   name: "Pixiv Hidden Search",
-  version: "0.1.0",
+  version: "1.0.0",
   manifest_version: 3,
   description: "Pixivのブックマークにある削除済み・非公開イラストの情報を探すことができます。",
   icons: {
