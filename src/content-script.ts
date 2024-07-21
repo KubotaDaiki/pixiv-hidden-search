@@ -1,3 +1,6 @@
+/**
+ * ページ内の非表示イラストに作品ID検索用リンクを追加する
+ */
 function addLinksToHiddenElements() {
   const hiddenElement = document.querySelectorAll('[data-gtm-user-id="0"]');
   [...hiddenElement].forEach(function (el) {
