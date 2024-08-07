@@ -15,7 +15,8 @@ function addLinksToHiddenElements() {
 }
 
 chrome.runtime.onMessage.addListener(function () {
-  // メッセージ受信タイミングがページ読み込み完了より早いため、少し遅延させる
+  // ブックマーク内でページを移動させた際、すぐに処理を実行すると前のページの要素が取得されてしまう
+  // そのため遅延させる（setTimeoutより良い方法があるかも）
   setTimeout(() => {
     addLinksToHiddenElements();
   }, 500);
